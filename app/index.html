@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HearthLedger — A household budget that balances itself</title>
+<meta name="description" content="HearthLedger is a working household budget site: track income, spending, budgets and savings goals for the Rivera family, with real figures and charts, fully offline.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="#/">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M14 3 L26 13 H23 V25 H17 V18 H11 V25 H5 V13 H2 Z" fill="#1E4D3B"/><rect x="8" y="20" width="12" height="2" fill="#FAF6EF"/></svg>
+      HearthLedger
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#/" data-route="dashboard">Dashboard</a>
+      <a href="#/transactions" data-route="transactions">Transactions</a>
+      <a href="#/budgets" data-route="budgets">Budgets</a>
+      <a href="#/goals" data-route="goals">Goals</a>
+      <a href="#/insights" data-route="insights">Insights</a>
+    </nav>
+  </div>
+</header>
+<main id="app" class="page"></main>
+<footer class="site-footer">
+  HearthLedger — the Rivera family&rsquo;s November 2026 budget. Figures are real for this household. Your changes stay in your browser (localStorage) — no account, no tracking, no network.
+</footer>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
